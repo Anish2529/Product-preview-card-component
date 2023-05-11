@@ -1,0 +1,155 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: hsl(30, 38%, 92%);
+    width: 100vw;
+    height: 100vh;
+}
+
+.container{
+    width: 50%;
+    height: 70%;
+    background-color: white;
+    border-radius: 20px;
+    box-shadow: 1px 1px 10px rgba(0, 0, 0, .10);
+
+    display: flex;
+}
+
+.visual{
+    width: 50%;
+    
+    background-image: url(images/image-product-desktop.jpg);
+    background-size: cover;
+
+    border-radius: 20px 0px 0px 20px;
+}
+
+.visual img{
+    display: none;
+}
+
+.text{
+    width: 50%;
+    padding: 30px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.btn{
+    width: 100%;
+    height: 50px;
+    border-radius: 10px;
+    background-color: hsl(158, 36%, 37%);
+    border: none;
+    outline: none;
+
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    align-items: center;
+    color: white;
+}
+
+.btn:hover{
+    background-color: hsla(158, 37%, 17%, 0.999);
+}
+
+.btn p{
+    font-family: 'Montserrat', sans-serif;
+    color: white;
+    font-weight: 700;
+    font-size: 14px;
+}
+
+.icon{
+    width: 24px;
+    height: 24px;
+}
+
+p{
+    font-family: 'Montserrat', sans-serif;
+    color: white;
+    font-weight: 500;
+    font-size: 18px;
+    color: hsl(228, 12%, 48%);
+    font-weight: 500;
+    line-height: 150%;
+}
+span{
+    text-transform: uppercase;
+    letter-spacing: 8px;
+    font-size: 14px;
+}
+
+h1{
+    font-family: 'Fraunces', serif;
+    color: white;
+    font-weight: 500;
+    font-size: 40px;
+    color: hsl(212, 21%, 14%);
+    line-height: 100%;
+}
+
+.price{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 30px;
+}
+
+.price h1{
+   color: hsl(158, 36%, 37%);
+}
+
+.price p{
+    text-decoration: line-through;
+    font-size: 14px;
+}
+
+@media screen  and (max-width:700px){
+    
+    main{
+        width: 100%;
+        height: 100%;
+        padding: 5%;
+    }
+
+    .container{
+        width: 100%;
+        height: 100%;
+    
+        display: flex;
+        flex-direction: column;
+    }
+    .visual{
+        width: 100%;
+        height: 40%;
+        background-image: none;
+        border-radius: 0px 0px 20px 20px;
+
+    }
+    .visual img{
+        width: 100%;
+        display: block;
+
+        border-radius: 20px;
+    }
+    .text{
+        width: 100%;
+    }
+    .text{
+        gap: 20px;
+    }
+
+
+}
